@@ -4,7 +4,8 @@ import bgImage from "../assets/hero.jpeg";
 const HeroSection = () => {
   return (
     <div
-      className="bg-cover bg-center relative h-[90vh] flex items-center justify-center"
+      id="home"
+      className="bg-cover bg-center relative h-[90vh] flex items-center justify-center "
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       {/* Overlay */}
@@ -21,12 +22,17 @@ const HeroSection = () => {
           every job.
         </p>
         <div className="mt-6 flex justify-center gap-4 flex-wrap">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md transition">
-            Explore Services
-          </button>
-          <button className="bg-white text-blue-600 hover:bg-gray-200 px-5 py-2 rounded-md transition">
-            Book Now
-          </button>
+          <a href="#services">
+            {" "}
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md transition">
+              Explore Services
+            </button>
+          </a>
+          <a href="#contact">
+            <button className="bg-white text-blue-600 hover:bg-gray-200 px-5 py-2 rounded-md transition">
+              Book Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

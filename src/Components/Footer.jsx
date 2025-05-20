@@ -21,7 +21,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-yellow-400 mb-3">
             About Us
           </h3>
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-white leading-relaxed">
             Book my service connects you with skilled professionals for all your
             home and office needs. We ensure quality service and customer
             satisfaction.
@@ -34,20 +34,31 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="space-y-2 text-gray-400">
-            <li>
-              <a href="#">Home</a>
+            <li className="relative group">
+              <a href="#home" className="text-white group-hover:underline">
+                Home
+              </a>
             </li>
-            <li>
-              <a href="#">Services</a>
+
+            <li className="relative group">
+              <a href="#services" className="text-white group-hover:underline">
+                Services
+              </a>
             </li>
-            <li>
+
+            {/* <li>
               <a href="#">Feedback</a>
+            </li> */}
+            <li className="relative group">
+              <a href="#contact" className="text-white group-hover:underline">
+                Contact
+              </a>
             </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Terms & conditions</a>
+
+            <li className="relative group">
+              <a href="#" className="text-white group-hover:underline">
+                Terms & conditions
+              </a>
             </li>
           </ul>
         </div>
@@ -57,7 +68,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-yellow-400 mb-3">
             Contact Info
           </h3>
-          <ul className="space-y-3 text-gray-400 text-sm">
+          <ul className="space-y-3 text-white text-sm">
             <li className="flex items-start gap-2">
               <FaMapMarkerAlt className="mt-1 text-sky-400" />
               123 Main Street, City Center, State 12345
@@ -79,7 +90,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="max-w-7xl mx-auto mt-6 text-center text-xs text-gray-500 space-x-4">
+      <div className="max-w-7xl mx-auto mt-6 text-center text-xs text-white space-x-4">
         <span>© 2025 Book my service</span>
         <span>Privacy</span>
         <span>Cookies</span>

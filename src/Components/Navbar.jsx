@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const links = ["Home", "Services", "AboutUs", "Feedback", "Contact"];
+  const links = ["Home", "Services", "AboutUs", "Contact"];
 
   return (
     <nav className="w-full bg-white shadow-md sticky top-0 left-0 z-50">
@@ -27,9 +27,11 @@ const Navbar = () => {
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
-          <button className="bg-blue-500 text-white px-4 py-2 text-lg rounded-2xl hover:bg-blue-700 transition">
-            Book a Service
-          </button>
+          <a href="#contact">
+            <button className="bg-blue-500 text-white px-4 py-2 text-lg rounded-2xl hover:bg-blue-700 transition">
+              Book a Service
+            </button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -53,9 +55,12 @@ const Navbar = () => {
               <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-24"></span>
             </a>
           ))}
-          <button className="mt-3 w-full bg-blue-500 text-white px-4 py-2 rounded-2xl text-lg hover:bg-blue-700 transition">
-            Book a Service
-          </button>
+          <a href="#contact">
+            {" "}
+            <button className="mt-3 w-full bg-blue-500 text-white px-4 py-2 rounded-2xl text-lg hover:bg-blue-700 transition">
+              Book a Service
+            </button>
+          </a>
         </div>
       )}
     </nav>

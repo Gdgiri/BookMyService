@@ -67,7 +67,10 @@ const Testimonials = () => {
   );
 
   return (
-    <div className="bg-[#fff5e9] px-4 text-center relative bottom-12">
+    <div
+      className="bg-[#fff5e9] px-4 text-center relative bottom-12"
+      id="testominals"
+    >
       <h2 className="text-3xl font-bold mb-2">What Our Customers Say</h2>
       <p className="text-gray-600 mb-8">Don't just take our word for it</p>
 

@@ -3,7 +3,7 @@ import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const SupportCards = () => {
   return (
-    <div className="py-16 bg-[#fff7f0] flex items-center justify-center ">
+    <div className="py-16 bg-[#fff7f0] flex items-center justify-center " id="support">
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full m-4 mb-34">
         {/* WhatsApp Card */}
         <div className="bg-white rounded-xl shadow-md p-6 relative overflow-hidden">
