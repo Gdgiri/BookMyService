@@ -1,0 +1,24 @@
+import React from "react";
+import Navbar from "./Components/Navbar";
+import HeroSection from "./Pages/HeroSection";
+import ServicesSection from "./Pages/ServiceSection";
+import ContactForm from "./Pages/ContactForm";
+import SupportCards from "./Pages/SupportCards";
+// import Testimonials from "./Pages/Testimonials";
+import Footer from "./Components/Footer";
+
+const App = () => {
+  return (
+    <div>
+      <Navbar />
+      <HeroSection />
+      <ServicesSection />
+      <ContactForm />
+      <SupportCards />
+      {/* <Testimonials /> */}
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
