@@ -12,11 +12,14 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-1 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-indigo-600 rounded-full w-24">
-          <img src={logo} alt="BookMyService" className="w-20 h-20 " />
+          <a href="#">
+            {" "}
+            <img src={logo} alt="BookMyService" className="w-20 h-20 " />
+          </a>
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-6 ms-auto relative right-32">
           {links.map((link) => (
             <a
               key={link}
@@ -27,8 +30,11 @@ const Navbar = () => {
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-blue-700 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
+        </div>
+
+        <div className="hidden md:block">
           <a href="#contact">
-            <button className="bg-blue-500 text-white px-4 py-2 text-lg rounded-2xl hover:bg-blue-700 transition">
+            <button className="bg-blue-500 text-white px-6 py-2 text-lg rounded-2xl hover:scale-110 transform transition duration-300 ease-in-out">
               Book a Service
             </button>
           </a>
@@ -57,7 +63,7 @@ const Navbar = () => {
           ))}
           <a href="#contact">
             {" "}
-            <button className="mt-3 w-full bg-blue-500 text-white px-4 py-2 rounded-2xl text-lg hover:bg-blue-700 transition">
+            <button className="mt-3 w-full bg-blue-500 text-white px-4 py-2 rounded-2xl text-lg hover:bg-blue-700 hover:scale-110 transform transition duration-300 ease-in-out">
               Book a Service
             </button>
           </a>
