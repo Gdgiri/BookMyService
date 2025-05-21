@@ -2,7 +2,10 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className=" flex flex-col items-center justify-center bg-[#fff7f0] p-6" id="contact">
+    <div
+      className=" flex flex-col items-center justify-center bg-[#fff7f0] p-6"
+      id="contact"
+    >
       <div className="w-full max-w-lg opacity-100 bg-white rounded-xl p-8 shadow-xl border border-gray-200">
         <h2 className="text-center text-3xl font-bold mb-2 text-gray-800">
           Contact Us
@@ -38,7 +41,7 @@ const ContactForm = () => {
           </div>
 
           {/* Name & Phone */}
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
               <label
                 htmlFor="name"
@@ -102,7 +105,7 @@ const ContactForm = () => {
           </div>
 
           {/* Date & Time */}
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
               <label
                 htmlFor="date"

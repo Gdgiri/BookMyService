@@ -2,8 +2,16 @@ import React from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const SupportCards = () => {
+  const number = "919715424895"; // replace with your actual number (no +, no spaces)
+  const callLink = `tel:${number}`;
+  const message = "Hai give me quote for services?";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappLink = `https://wa.me/${number}?text=${encodedMessage}`;
   return (
-    <div className="py-16 bg-[#fff7f0] flex items-center justify-center " id="support">
+    <div
+      className="py-16 bg-[#fff7f0] flex items-center justify-center "
+      id="support"
+    >
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full m-4 mb-34">
         {/* WhatsApp Card */}
         <div className="bg-white rounded-xl shadow-md p-6 relative overflow-hidden">
@@ -25,7 +33,7 @@ const SupportCards = () => {
           </p>
           <div className="flex justify-center mt-4">
             <a
-              href="https://wa.me/yourwhatsapplink"
+              href={whatsappLink}
               className="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded-full text-sm"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +64,7 @@ const SupportCards = () => {
           </p>
           <div className="flex justify-center mt-4">
             <a
-              href="tel:+1234567890"
+              href={callLink}
               className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-sm"
             >
               Call now
