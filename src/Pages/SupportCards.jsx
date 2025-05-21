@@ -2,7 +2,7 @@ import React from "react";
 import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 
 const SupportCards = () => {
-  const number = "9715424895";
+  const number = "8189822888";
   const callLink = `tel:${number}`;
   const message = "Hello, I need some service details. Kindly assist.";
   // const message = "Hi, I'm interested in your services. Please let me know how to proceed.";
