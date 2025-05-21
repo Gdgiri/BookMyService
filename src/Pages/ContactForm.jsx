@@ -272,7 +272,7 @@ const ContactForm = () => {
             </label>
             <textarea
               id="address"
-              rows="3"
+              rows="4"
               placeholder="Enter your address"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
             ></textarea>
@@ -318,7 +318,7 @@ const ContactForm = () => {
             </label>
             <textarea
               id="message"
-              rows="3"
+              rows="4"
               placeholder="Enter your message"
               className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
             ></textarea>
