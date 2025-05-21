@@ -6,12 +6,14 @@ import ContactForm from "./Pages/ContactForm";
 import SupportCards from "./Pages/SupportCards";
 // import Testimonials from "./Pages/Testimonials";
 import Footer from "./Components/Footer";
+import AboutUs from "./Pages/AboutUs";
 
 const App = () => {
   return (
     <div className="scroll-smooth">
       <Navbar />
       <HeroSection />
+      <AboutUs />
       <ServicesSection />
       <ContactForm />
       <SupportCards />

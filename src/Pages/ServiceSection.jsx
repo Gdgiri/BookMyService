@@ -24,7 +24,7 @@ const ServicesSection = () => {
   const displayedServices = showAll ? services : services.slice(0, 3);
 
   return (
-    <div id="services" className="bg-[#fff7ed] py-32 px-4 scroll-mt-24">
+    <div id="services" className="bg-[#fff7ed] py-24 px-4 scroll-mt-24">
       <div id="services" className="text-center mb-8">
         <h2 className="text-3xl font-bold text-gray-800">Our Services</h2>
         <p className="text-gray-600 mt-2">
