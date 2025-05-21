@@ -9,8 +9,8 @@ import footerlogo from "../assets/footerlogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0a2f5d] text-white px-6 py-10 mt-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm border-b border-gray-700 pb-10">
+    <footer className="bg-[#0a2f5d] text-white px-6 py-5 mt-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm border-b border-gray-700 pb-1">
         {/* Logo Section */}
         <div className="md:col-span-1 flex flex-col items-center md:items-start">
           <img src={footerlogo} alt="logo" className="w-32 mb-6 md:w-44" />
@@ -110,7 +110,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom */}
-      <div className="max-w-7xl mx-auto mt-6 text-center text-xs text-white space-x-4 flex flex-wrap justify-center gap-2">
+      <div className="max-w-7xl mx-auto relative top-5 text-center text-xs text-white space-x-4 flex flex-wrap justify-center gap-2">
         <span>© 2025 Book my services</span>
         <span className="hidden md:flex space-x-4">
           <a
