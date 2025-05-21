@@ -4,7 +4,11 @@ import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 const SupportCards = () => {
   const number = "919715424895"; // replace with your actual number (no +, no spaces)
   const callLink = `tel:${number}`;
-  const message = "Hai give me quote for services?";
+  const message = "Hello, I need some service details. Kindly assist.";
+  // const message = "Hi, I'm interested in your services. Please let me know how to proceed.";
+  // const message = "Hello! I’d like to know more about your services.";
+  // const message = "Hi, I’m looking for services. Please guide me.";
+
   const encodedMessage = encodeURIComponent(message);
   const whatsappLink = `https://wa.me/${number}?text=${encodedMessage}`;
   return (
