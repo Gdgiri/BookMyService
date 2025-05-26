@@ -66,6 +66,14 @@ const Footer = () => {
                 Terms & conditions
               </a>
             </li>
+            <li className="">
+              <a
+                href="/login"
+                className="text-white hover:underline transition duration-200"
+              >
+                admin
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -79,11 +87,10 @@ const Footer = () => {
               <FaMapMarkerAlt className="mt-1 text-sky-400" />
               <div>
                 No 4 Mp Sarathi nagar,
-                
                 <br />
                 Arcot road Kagithapattarai,
                 <br />
-                 Vellore 632012.
+                Vellore 632012.
               </div>
             </li>
 
